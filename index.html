@@ -677,14 +677,18 @@
                         </div>
                     </section>
                     <!-- ========== End Service Section ========== -->
-
+                    <audio autoplay loop controls hidden id="bg">
+                        <source src="scientifiesta.mp3" type="audio/mpeg">
+                        <source src="scientifiesta.ogg" type="audio/ogg">
+                    
+                      </audio>
 
                     <!-- ==========  box description move  ========== -->
                     <div class="box-seat box-seat-parallax section-margin">
 
                         <div class="inner-img h-100-v" data-dsn-grid="move-up" data-overlay="2">
                             <img class="transform-3d has-bigger-scale" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                            data-dsn-src="assets/img/project/project3/2.jpg" alt="">
+                            data-dsn-src="assets/img/project/project1/1.jpg" alt="">
                         </div>
                         <div class="pro-text background-section box-padding" data-dsn-grid="move-section"
                             data-dsn-responsive="tablet">
@@ -704,7 +708,7 @@
                             <p>
                                <a>Visit Our Page and Win Amazing Prizes</a></p>
 
-                            <a href="#0" class="mt-30 dsn-button image-zoom" data-dsn="parallax">
+                            <a href="https://facebook.com/initiativesfoundation" class="mt-30 dsn-button image-zoom" data-dsn="parallax">
                                 <span class="dsn-border border-color-reverse-color"></span>
                                 Visit The Initiatives Foundation <span>⟶</span>
                             </a>
@@ -1974,6 +1978,7 @@
                     <span>Fb</span>
                 </a>
             </li>
+         
         </ul>
     </div>
     <!-- ========== End social network ========== -->
@@ -2001,13 +2006,14 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>var x = document.getElementById("bg"); 
+        x.play()
+        x.pause()
+        const audioObj = new Audio(url);
+audioObj.play();</script>
 
 
-<audio autoplay loop>
-    <source src="scientifiesta.mp3" type="audio/mpeg">
-    <source src="scientifiesta.ogg" type="audio/ogg">
 
-  </audio>
 </body>
 
 </html>

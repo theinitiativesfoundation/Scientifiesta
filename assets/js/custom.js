@@ -5,7 +5,6 @@
         preloader();
         mouseCirMove();
 
-
         /**
          * Execute data after ajax
          */
