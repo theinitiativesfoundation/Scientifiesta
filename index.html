@@ -31,7 +31,36 @@
 
 <body class="v-dark dsn-effect-scroll dsn-cursor-effect dsn-ajax">
 
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
 
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "101595038218177");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v12.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
     <!-- ========== Loading Page ========== -->
     <div class="preloader">
         <span class="percent ">0</span>
@@ -466,7 +495,7 @@
 
                             <p class="sub-heading line-shap line-shap-before mb-15">
                                 <span class="line-bg-right">
-                                    Our Services
+                                   Event Segments
                                 </span>
 
                             </p>
@@ -678,8 +707,8 @@
                     </section>
                     <!-- ========== End Service Section ========== -->
                     <audio autoplay loop controls hidden id="bg">
-                        <source src="scientifiesta.mp3" type="audio/mpeg">
-                        <source src="scientifiesta.ogg" type="audio/ogg">
+                        <source src="./scientifiesta.mp3" type="audio/mpeg">
+                        <source src="./scientifiesta.ogg" type="audio/ogg">
                     
                       </audio>
 
@@ -886,7 +915,7 @@
               
 
                     <!-- ========== testimonial Section ========== -->
-                    <section class="testimonials testimonials-half section-margin" data-dsn-title="testimonials">
+                    <section class="testimonials testimonials-half section-margin" data-dsn-title="Sponsors">
                         <div class="container">
                             <div class="testimonials-box box-padding p-relative w-100 background-section">
                                 <div class="row">
@@ -1052,7 +1081,7 @@
                                         <div class="img-container h-100 before-z-index" data-dsn-grid="move-up"
                                             data-overlay="3">
                                             <img class="cover-bg-img " src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                            data-dsn-src="assets/img/plan-project.jpg" alt="">
+                                            data-dsn-src="assets/img/about-intro.gif" alt="">
                                         </div>
 
                                     </div>
@@ -1130,15 +1159,15 @@
 
                     <!-- ========== blog Section ========== -->
                     <section class="our-blog section-margin p-relative dsn-swiper" data-dsn-animate="section"
-                        data-dsn-option='{"slidesPerView":1.5  }' data-dsn-title="Lasts post">
+                        data-dsn-option='{"slidesPerView":1.5  }' data-dsn-title="Event News">
                         <div class="container mb-70 d-flex text-center flex-column align-items-center">
                             <p class="sub-heading line-shap line-shap-before mb-15">
                                 <span class="line-bg-right">
-                                    Lasts post
+                                   Event News
                                 </span>
                             </p>
                             <h2 class="section-title  title-cap">
-                                Latest And Greatest <br>Post
+                               Important Update about <br>Event
                             </h2>
 
                         </div>
@@ -1603,25 +1632,7 @@
                             <div class="d-flex align-items-center h-100">
                                 <div class="column-left">
                                     <div class="footer-social p-relative">
-                                        <ul>
-                                            <li class="over-hidden">
-                                                <a href="#" data-dsn="parallax" target="_blank"
-                                                    rel="nofollow">Dribbble.</a>
-                                            </li>
-                                            <li class="over-hidden">
-                                                <a href="#" data-dsn="parallax" target="_blank"
-                                                    rel="nofollow">Behance.</a>
-                                            </li>
-                                            <li class="over-hidden">
-                                                <a href="#" data-dsn="parallax" target="_blank"
-                                                    rel="nofollow">Linkedin.</a>
-                                            </li>
-                                            <li class="over-hidden">
-                                                <a href="#" data-dsn="parallax" target="_blank"
-                                                    rel="nofollow">Twitter.</a>
-                                            </li>
-
-                                        </ul>
+                                         
                                     </div>
                                 </div>
 
